@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/manager"
+    android:paddingBottom="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+    <!--   登录后的管理界面-->
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="欢迎登录SVU"
+        android:textColor="#656060"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv1"
+        android:layout_marginTop="10dp"
+        android:text="管理系统"
+        android:layout_marginLeft="25dp"
+        android:textSize="20sp" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/manager_pic"
+        android:layout_width="50dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@id/tv1"
+        android:src="@drawable/admin_photo"
+        />
+
+    <Button
+        style="@style/common_button_style"
+        android:id="@+id/manager_activity_select"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="70dp"
+        android:text="查询学生信息"/>
+
+
+    <Button
+        style="@style/common_button_style"
+        android:id="@+id/manager_activity_add"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_below="@+id/manager_activity_select"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="70dp"
+        android:text="添加学生信息"/>
+
+
+    <Button
+        style="@style/common_button_style"
+        android:id="@+id/manager_activity_order"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_below="@+id/manager_activity_add"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="70dp"
+        android:gravity="center"
+        android:text="查看总成绩排名"/>
+
+    <TextView
+        android:id="@+id/manager_activity_forceOffline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="强制下线"
+        android:textColor="#656060"/>
+</RelativeLayout>

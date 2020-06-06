@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/stulogin"
+    android:paddingBottom="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    >
+    <!--学生管理界面布局-->
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="欢迎使用SVU"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv1"
+        android:layout_marginTop="10dp"
+        android:text="管理系统"
+        android:layout_marginLeft="25dp"
+        android:textSize="20sp" />
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/student_pic"
+        android:layout_width="50dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@id/tv1"
+        android:src="@drawable/student_photo"
+        />
+
+    <Button
+        android:onClick="select"
+        style="@style/common_button_style"
+        android:id="@+id/student_activity_select"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="70dp"
+        android:text="查询个人信息"/>
+
+    <Button
+        android:onClick="update"
+        style="@style/common_button_style"
+        android:id="@+id/student_activity_update"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_below="@+id/student_activity_select"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="70dp"
+        android:text="修改密码"/>
+    <Button
+        android:onClick="exit"
+        style="@style/common_button_style"
+        android:id="@+id/manager_activity_order"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_below="@+id/student_activity_update"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="70dp"
+        android:gravity="center"
+        android:text="安全退出"/>
+
+</RelativeLayout>

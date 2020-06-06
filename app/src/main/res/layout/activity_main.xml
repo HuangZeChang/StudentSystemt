@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bj2"
+    tools:context="manger.student.studensystem.activity.MainActivity">
+<TextView
+    android:id="@+id/main_activity_title"
+    android:gravity="center"
+    android:textSize="30sp"
+    android:text="欢迎使用SVU学生管理系统"
+    android:textColor="#656060"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/main_activity_title"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="76dp"
+        android:gravity="center"
+        android:text="请选择用户类型"
+        android:textColor="#18f5e8"
+        android:textSize="20sp" />
+<de.hdodenhof.circleimageview.CircleImageView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_centerVertical="true"
+    android:layout_marginLeft="20dp"
+    android:id="@+id/main_activity_admin_pic"
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:src="@drawable/admin_photo"
+    app:civ_border_width="2dp"
+    app:civ_border_color="#00000000"/>
+<Button
+    android:id="@+id/manager"
+    android:onClick="manager"
+    style="@style/common_button_style"
+    android:text="管理员登录"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="40dp"
+    android:layout_toRightOf="@id/main_activity_admin_pic"
+    android:layout_alignBottom="@id/main_activity_admin_pic"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+<de.hdodenhof.circleimageview.CircleImageView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_centerVertical="true"
+    android:layout_marginLeft="20dp"
+    android:id="@+id/main_activity_sudent_pic"
+    android:layout_marginTop="20dp"
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:layout_below="@+id/main_activity_admin_pic"
+    android:src="@drawable/student_photo"
+    app:civ_border_width="2dp"
+    app:civ_border_color="#00000000"/>
+<Button
+    android:id="@+id/student"
+    android:onClick="student"
+    style="@style/common_button_style"
+    android:text="学生登录"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="40dp"
+    android:layout_toRightOf="@id/main_activity_admin_pic"
+    android:layout_alignBottom="@id/main_activity_sudent_pic"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+</RelativeLayout>
